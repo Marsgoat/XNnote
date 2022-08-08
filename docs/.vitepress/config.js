@@ -17,6 +17,7 @@ export default {
     nav: nav(),
     sidebar: {
       '/go/': sidebarGo(),
+      '/chat/': sidebarChat(),
     },
     footer: {
       copyright: `Copyright © ${new Date().getFullYear()} Marsgoat`,
@@ -34,6 +35,7 @@ function nav() {
   return [
     { text: '關於', link: '/about/', activeMatch: '/about/' },
     { text: '圍棋人', link: '/go/', activeMatch: '/go/' },
+    { text: '雜談', link: '/chat/', activeMatch: '/chat/' },
   ];
 }
 
@@ -53,6 +55,16 @@ function sidebarGo() {
       text: '棋評',
       collapsible: true,
       items: [{ text: '申之一手', link: '/go/ShinJinSeo' }],
+    },
+  ];
+}
+
+function sidebarChat() {
+  return [
+    {
+      text: '雜談',
+      collapsible: true,
+      items: [{ text: '關於', link: '/chat/' }],
     },
   ];
 }
