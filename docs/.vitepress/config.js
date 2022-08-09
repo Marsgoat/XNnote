@@ -18,6 +18,7 @@ export default {
     sidebar: {
       '/go/': sidebarGo(),
       '/chat/': sidebarChat(),
+      '/coding/': sidebarCoding(),
     },
     footer: {
       copyright: `Copyright © ${new Date().getFullYear()} Marsgoat`,
@@ -29,6 +30,10 @@ export default {
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/Marsgoat' }],
   },
+  markdown: {
+    // theme: 'material-palenight',
+    lineNumbers: true,
+  },
 };
 
 function nav() {
@@ -36,6 +41,7 @@ function nav() {
     { text: '關於', link: '/about/', activeMatch: '/about/' },
     { text: '圍棋', link: '/go/', activeMatch: '/go/' },
     { text: '雜談', link: '/chat/', activeMatch: '/chat/' },
+    { text: 'coding', link: '/coding/', activeMatch: '/coding/' },
   ];
 }
 
@@ -62,6 +68,22 @@ function sidebarChat() {
       items: [
         { text: '淺談挖礦', link: '/chat/miner' },
         { text: '2022面試紀錄', link: '/chat/interview2022' },
+      ],
+    },
+  ];
+}
+
+function sidebarCoding() {
+  return [
+    {
+      text: 'coding',
+      collapsible: true,
+      items: [
+        { text: '蜜月橋牌程式優化(位元運算)', link: '/coding/GodJimmy' },
+        {
+          text: '2022面試白板題',
+          link: '/coding/interview2022-leetcode',
+        },
       ],
     },
   ];
