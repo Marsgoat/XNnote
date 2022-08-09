@@ -5,4 +5,4 @@
 
 ### 關於小羊
 
-CV 工程師(不是 computer vision，而是<font color="#c2534c">Ctrl+C、Ctrl+V</font>)、圍棋愛好者、幣圈韭菜
+CV 工程師(不是 computer vision，而是<font v-pre color="#c2534c">Ctrl+C、Ctrl+V</font>)、圍棋愛好者、幣圈韭菜
