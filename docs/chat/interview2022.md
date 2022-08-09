@@ -11,7 +11,7 @@
 
 ## 題目分享
 
-有一些相關知識或解答我會放去[2022 面試白板題](https://hackmd.io/@Marsgoat/2022interview-leetcode)，有興趣的話可以去看看。
+有一些相關知識或解答我會放去[2022 面試白板題](/coding/interview2022-leetcode.md)，有興趣的話可以去看看。
 
 ### Stack and Queue
 
