@@ -34,7 +34,7 @@ export default {
 function nav() {
   return [
     { text: '關於', link: '/about/', activeMatch: '/about/' },
-    { text: '圍棋人', link: '/go/', activeMatch: '/go/' },
+    { text: '圍棋', link: '/go/', activeMatch: '/go/' },
     { text: '雜談', link: '/chat/', activeMatch: '/chat/' },
   ];
 }
@@ -42,12 +42,7 @@ function nav() {
 function sidebarGo() {
   return [
     {
-      text: '圍棋',
-      collapsible: true,
-      items: [{ text: '關於', link: '/go/' }],
-    },
-    {
-      text: '圍棋人生',
+      text: '圍棋生活',
       collapsible: true,
       items: [{ text: '圍棋替代役', link: '/go/TaiwanGoAssociation' }],
     },
@@ -64,7 +59,10 @@ function sidebarChat() {
     {
       text: '雜談',
       collapsible: true,
-      items: [{ text: '關於', link: '/chat/' }],
+      items: [
+        { text: '淺談挖礦', link: '/chat/miner' },
+        { text: '2022面試紀錄', link: '/chat/interview2022' },
+      ],
     },
   ];
 }
