@@ -1,3 +1,5 @@
+import MermaidPlugin from 'vitepress-plugin-mermaid';
+
 export default {
   base: '/XNnote/',
   lang: 'zh-Hant-TW',
@@ -31,8 +33,9 @@ export default {
     socialLinks: [{ icon: 'github', link: 'https://github.com/Marsgoat' }],
   },
   markdown: {
-    // theme: 'material-palenight',
+    theme: 'material-palenight',
     lineNumbers: true,
+    config: MermaidPlugin,
   },
 };
 
