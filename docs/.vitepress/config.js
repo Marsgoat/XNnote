@@ -83,6 +83,7 @@ function sidebarCoding() {
       collapsible: true,
       items: [
         { text: '蜜月橋牌程式優化(位元運算)', link: '/coding/GodJimmy' },
+        { text: '旋轉棋盤', link: '/coding/rotate' },
         {
           text: '2022面試白板題',
           link: '/coding/interview2022-leetcode',
