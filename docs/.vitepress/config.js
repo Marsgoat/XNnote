@@ -35,7 +35,10 @@ export default {
   markdown: {
     theme: 'material-palenight',
     lineNumbers: true,
-    config: MermaidPlugin,
+    config: (md) => {
+      md.use(MermaidPlugin);
+      md.use(require('markdown-it-katex'));
+    },
   },
 };
 
