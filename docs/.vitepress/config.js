@@ -84,13 +84,19 @@ function sidebarCoding() {
       items: [
         { text: '蜜月橋牌程式優化(位元運算)', link: '/coding/GodJimmy' },
         { text: '旋轉棋盤', link: '/coding/rotate' },
-        { text: 'GitHub Copilot', link: '/coding/copilot' },
+        { text: 'GitHub Copilot', link: '/coding/GithubCopilot' },
         { text: '圍棋征子邏輯', link: '/coding/goLadders' },
         { text: '程式碼可讀性', link: '/coding/readability' },
+        {
+          text: 'Nullish Coalescing Operator',
+          link: '/coding/nullishCoalescingOperator',
+        },
+        { text: 'Fisher Yates Shuffle', link: '/coding/FisherYatesShuffle' },
         {
           text: '2022面試白板題',
           link: '/coding/interview2022-leetcode',
         },
+        { text: 'Merge Intervals', link: '/coding/mergeIntervals' },
       ],
     },
   ];
