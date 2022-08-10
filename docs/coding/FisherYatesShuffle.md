@@ -1,3 +1,10 @@
+---
+head:
+  - - link
+    - rel: stylesheet
+      href: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css
+---
+
 # Fisher–Yates shuffle
 
 > Apr 24, 2022
