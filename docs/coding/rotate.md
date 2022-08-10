@@ -1,3 +1,10 @@
+---
+head:
+  - - link
+    - rel: stylesheet
+      href: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css
+---
+
 # 旋轉棋盤
 
 > Nov 6, 2021
@@ -163,13 +170,25 @@ def rotate_move(sgf, size):
 ### 原理
 
 其實這邊就是高中數學嗎?!我已經全忘光了，我先承認我數學超爛，所以我一直很崇拜念數學系的人，念數學系的根本都是鬼，我身邊念數學系或是數學系轉資工所的那些人，根本都是只能仰望的存在。<br>
-平面上的座標[旋轉](<https://en.wikipedia.org/wiki/Rotation_(mathematics)>)，如果以原點為中心，逆時鐘旋轉 θ 度後，原座標為(x,y)、新座標為(x',y')，以矩陣的方式表示如下：
+平面上的座標[旋轉](<https://en.wikipedia.org/wiki/Rotation_(mathematics)>)，如果以原點為中心，逆時鐘旋轉 θ 度後，原座標為$(x,y)$、新座標為$(x',y')$，以矩陣的方式表示如下：
 
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/ce3876bf4508c83d02b14167bd66b177ded69651)
+$$
+\begin{bmatrix}
+x' & y'
+\end{bmatrix} =
+\begin{bmatrix}
+\cos\theta & -\sin\theta \\
+\sin\theta & \cos\theta
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
+$$
 
 那棋盤就是以天元(棋盤正中央那個點)為中心做旋轉，因為只會轉 90、180、270，所以其實就很簡單，以旋轉 90 度來看，cosθ 為 0、sinθ 為 1<br>
-x' = -y<br>
-y' = x<br>
+$x'=-y$<br>
+$y'=x$<br>
 這邊可以去 google 一下，轉一些奇怪的角度要怎麼寫，還蠻有趣的，我這就不展開了。<br>
 反正圍棋應該是沒有人要轉 45 度之類的吧?!這樣轉很多棋子都被轉出棋盤外了...<br>
 如果有，那你自己寫。
