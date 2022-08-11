@@ -1,4 +1,5 @@
 import MermaidPlugin from 'vitepress-plugin-mermaid';
+import mathjax3 from 'markdown-it-mathjax3';
 
 export default {
   base: '/XNnote/',
@@ -37,7 +38,7 @@ export default {
     lineNumbers: true,
     config: (md) => {
       md.use(MermaidPlugin);
-      md.use(require('markdown-it-katex'));
+      md.use(mathjax3);
     },
   },
 };

@@ -2,3 +2,8 @@
   --vp-c-brand: #54a8bf;
   --vp-c-brand-light: #54a8bf;
 }
+
+mjx-container {
+  display: inline-block;
+  margin: auto 2px -2px;
+}
