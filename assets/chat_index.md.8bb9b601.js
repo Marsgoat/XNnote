@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,b as n}from"./app.7bf40c82.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"chat/index.md"}'),o={name:"chat/index.md"},s=n("p",null,"\u5C31\u662F\u96DC\u8AC7\u3002",-1),r=[s];function c(d,_,i,p,l,m){return a(),t("div",null,r)}var u=e(o,[["render",c]]);export{h as __pageData,u as default};
