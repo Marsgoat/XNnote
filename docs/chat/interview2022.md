@@ -1,10 +1,3 @@
----
-head:
-  - - link
-    - rel: stylesheet
-      href: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css
----
-
 # 2022 面試紀錄
 
 > Jul 13, 2022
