@@ -220,7 +220,7 @@ public int candy(int[] ratings) {
 [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)<br>
 [986. Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/)
 
-> 已補上[Merge Intervals](https://hackmd.io/@Marsgoat/MergeIntervals)<br>
+> 已補上[Merge Intervals](/coding/mergeIntervals.md)<br>
 > Jul 30, 2022
 
 ### C++相關問題
