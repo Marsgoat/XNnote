@@ -20,7 +20,7 @@
   "homepage": "https://github.com/Marsgoat/XNnote#readme",
   "dependencies": {
     "markdown-it-mathjax3": "^4.3.1",
-    "vitepress": "^1.0.0-alpha.4",
+    "vitepress": "^1.0.0-alpha.8",
     "vitepress-plugin-mermaid": "^1.0.2",
     "vue": "^3.2.37"
   }
