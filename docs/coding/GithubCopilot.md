@@ -3,6 +3,10 @@
 > Nov 15, 2021
 
 如題，這次要分享的是[GitHub Copilot](https://copilot.github.com/)，簡單說就是 AI 會幫你寫程式！！！<br>
+
+> Copilot 已於 8/22 開始收費了 QAQ<br>
+> Aug 23, 2022
+
 看起來是只要給明確定義的 function 名稱，他就會自動幫你生成程式碼，有興趣的可以點上面連結去看詳細的介紹，比較可惜的是他現在還沒有完全開放給所有人使用，必須去申請排隊，然後等待通知，其實我也不知道會不會有，因為我根本還沒有收到信，所以等收到信之後考慮再來詳細寫一篇。<br>
 看到這應該很多人覺得我這篇是在寫心酸的，等等！先別急著關掉，下滑有驚喜啊！
 
@@ -22,7 +26,7 @@
 首先我們打上`getBlackStonesFromSgf`如同字面上意思，目標就是要從 sgf 檔中取出黑棋。<br>
 直接上影片!
 
-<!-- {%youtube 0XgUsWZYa1A %} -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0XgUsWZYa1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 WTF!!!!簡直太狂了，他還會自己用`loadSgf`跟`sgfToArray`這兩個 function...<br>
 這兩個 function 就如同字面上的意思，一個是用來取出 sgf 的資訊、一個是用來把 sgf 棋子轉成 array 的形式。
