@@ -1,6 +1,6 @@
 # 申之一手
 
-> Feb 27, 2022
+`2022/2/27`
 
 最近圍棋圈中[申真諝](https://zh.wikipedia.org/wiki/%E7%94%B3%E7%9C%9F%E8%B0%9E)的版面特別多，LG 盃決賽 2:0 擊敗[楊鼎新](https://zh.wikipedia.org/wiki/%E6%9D%A8%E9%BC%8E%E6%96%B0)，拿下<font v-pre color="#c2534c">第三個世界冠軍</font>，還有農心盃與[羋昱廷](https://zh.wikipedia.org/wiki/%E8%8A%88%E6%98%B1%E5%BB%B7)的激戰，第一盤還比較有懸念，重賽是直接不給機會，接著輕取[余正麒](https://zh.wikipedia.org/wiki/%E4%BD%99%E6%AD%A3%E9%BA%92)、完勝[柯潔](https://zh.wikipedia.org/zh-tw/%E6%9F%AF%E6%B4%81)，一個局部打爆[一力遼](https://zh.wikipedia.org/wiki/%E4%B8%80%E5%8A%9B%E8%BE%BD)，<font v-pre color="#c2534c">最終 4 連勝終結農心盃，並且達成跨季 9 連勝，對中國棋手 23 連勝，不斷的在挑戰、刷新各項紀錄</font>，身為一個圍棋愛好者覺得十分幸福，可以看到這些精采的棋局，同時也見證歷史。
 

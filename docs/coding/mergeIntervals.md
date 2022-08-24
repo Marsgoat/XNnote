@@ -1,6 +1,6 @@
 # Merge Intervals
 
-> Jul 30, 2022
+`2022/7/30`
 
 [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 

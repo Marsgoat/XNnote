@@ -1,6 +1,6 @@
 # 2022 面試白板題
 
-> Jul 15, 2022
+`2022/7/15`
 
 ## 解題分享
 
@@ -227,7 +227,7 @@ public int candy(int[] ratings) {
 這樣時間複雜度就優化到了 $O(n)$ ，leetcode 上還有其他解法，有興趣的可以自己再去看看。
 
 > 寫著寫著發現又寫太多廢話了，未來有機會再開一篇新的來補下面三題吧。<br>
-> Jul 22, 2022
+> 2022/7/22
 
 ### Median of Two Sorted Arrays
 
@@ -239,7 +239,7 @@ public int candy(int[] ratings) {
 [986. Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/)
 
 > 已補上[Merge Intervals](/coding/mergeIntervals.md)<br>
-> Jul 30, 2022
+> 2022/7/30
 
 ### C++相關問題
 
