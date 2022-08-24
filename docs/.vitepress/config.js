@@ -110,6 +110,7 @@ function sidebarCoding() {
           link: '/coding/interview2022-leetcode',
         },
         { text: 'Merge Intervals', link: '/coding/mergeIntervals' },
+        { text: 'VitePress', link: '/coding/vitepress' },
       ],
     },
   ];
