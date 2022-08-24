@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # coding
 
 關於一些程式學習的紀錄。

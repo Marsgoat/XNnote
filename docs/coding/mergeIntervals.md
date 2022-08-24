@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Merge Intervals
 
 `2022/7/30`

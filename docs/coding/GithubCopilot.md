@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # GitHub Copilot
 
 `2021/11/15`

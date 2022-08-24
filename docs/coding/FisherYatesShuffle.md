@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Fisher–Yates shuffle
 
 `2022/4/24`

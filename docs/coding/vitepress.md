@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # VitePress
 
 `2022/8/15`
@@ -166,7 +170,7 @@ docs
 
 再來就是一些設定檔的設置了，這邊可以看看官方[Config](https://vitepress.vuejs.org/config/introduction.html)的一些設置，我底下會分享我的筆記當做範例，有興趣的可以先參考一下，再自己去爬文檔做修改。
 
-```
+```shell{5-7}
 .
 ├─ docs
 │  ├─ .vitepress
@@ -403,7 +407,7 @@ mjx-container {
 
 `dcos/.vitepress/config.js`
 
-```javascript
+```javascript{7}
 import MermaidPlugin from 'vitepress-plugin-mermaid';
 
 export default {
@@ -433,7 +437,7 @@ export default {
 ## 新登場人物
 
 鈞平：<br>
-研究所學長，其實出現過了，但剛好有機會就再介紹一次，動態回顧大師，是個喜歡回顧自己 FB 動態回顧的人，絕招是沒有動態就創造動態。住在苗栗國，每次 Lab 聚會都說太遠不參加，但明明每週有兩天要到天龍國上班，我知道你會看ㄏㄏ，<font v-pre color="#c2534c">你已被小羊情緒勒索了，所以看到這行你下次一定要出席！</font>
+研究所學長，其實出現過了，但剛好有機會就再介紹一次，動態回顧大師，是個喜歡回顧自己 FB 動態回顧的人，絕招是沒有動態就創造動態。住在苗栗國，每次 Lab 聚會都說太遠不參加，但明明每週有兩天要到天龍國上班，我知道你會看，<font v-pre color="#c2534c">你已被小羊情緒勒索了，所以看到這行你下次一定要出席！</font>
 
 卷王：<br>
 其實就是我弟，他實在太卷了我都叫他卷王，以後筆記中出現也會改叫卷王，他現在比起半年前自信多了，應該是上班後發現自己好像有點強，但他下班後還是瘋狂的進修，我都快被他卷死了。<br>
