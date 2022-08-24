@@ -38,7 +38,7 @@ $ mkdir vitepress-starter && cd vitepress-starter
 ```
 
 照著官方文檔第一步做，其實我新增資料夾跟檔案都不下指令的，`mkdir`基本沒用過，按滑鼠右鍵「新增資料夾」他不香嗎，而且我常直接在 github 上新增一個 repo 然後再 clone 下來，就跳過新增資料夾的部分了。<br>
-<font color="#c2534c">這邊我也比較推薦直接開個 repo 然後 clone 下來。</font>
+<font v-pre color="#c2534c">這邊我也比較推薦直接開個 repo 然後 clone 下來。</font>
 
 ```shell
 $ npm init
