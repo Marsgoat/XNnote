@@ -98,7 +98,7 @@ if (i !== newIntervals.length - 1) {
 }
 ```
 
-### 正解
+### 優化
 
 這邊我就參考[唐神筆記-56. Merge Intervals](https://hackmd.io/@XZs7etbeS0ScwmeiGjHDug/SkycrTZhY)寫的用 Java 改寫了，唐神這題甚至連 Thinking Process 都空白，顯然就是覺得這題跟呼吸一樣自然，沒有寫的必要。<br>
 也是一樣做排序，只是不用多此一舉去標開始與結束，因為其實第一項就是開始、第二項就是結束啊，我特別標記他要幹嘛，`array[i][0]`就是開始時間`array[i][1]`就是結束時間。<br>
@@ -129,6 +129,28 @@ public int[][] merge(int[][] intervals) {
 兩個解法的時間複雜度都是 $O(nlogn)$ 主要就是排序的時間，排好後只要 $O(n)$ 就做完合併了。<br>
 但是唐神的解法簡單易懂，不像我寫了一大堆的 if，然後還有沒判斷到的情況，還要再加更多的 if 進去，這就是我與唐神的差距啊！<br>
 很多好解法的 code 都一個比一個精簡，但我每次做一道新的題目都是像上面那樣寫得又臭又長，然後還可能是錯的 XDD
+
+```javascript
+function merge(intervals) {
+  if (intervals.length === 0) return [];
+  const newIntervals = [];
+  intervals.sort((a, b) => a[0] - b[0]);
+  let current = intervals[0];
+  for (const interval of intervals) {
+    if (interval[0] <= current[1]) {
+      current[1] = Math.max(current[1], interval[1]);
+    } else {
+      newIntervals.push(current);
+      current = interval;
+    }
+  }
+  newIntervals.push(current);
+  return newIntervals;
+}
+```
+
+> 補上 js 版本，跟上面可以做個對照<br>
+> 2022/9/6
 
 [986. Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/)<br>
 這題其實想法一樣，只是變成取交集而已，我就不寫了～
