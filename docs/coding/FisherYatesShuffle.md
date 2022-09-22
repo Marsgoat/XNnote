@@ -259,7 +259,7 @@ console.log(count);
 不優化就不會犯錯 XDD，所以我感覺這個錯誤應該是夠厲害的人才會犯的錯，總之還是學習了。<br>
 當時是因為我的發牌實在寫得很搞笑讓彥吉看不下去了，叫我去查查，才知道這個洗牌的，後來在做平台的時候也用上了，在記錄這篇的時候還查到了 faro shuffle 的冷知識，有種無用的知識增加了的感覺。
 
-## reference
+## Reference
 
 [JavaScript 學演算法（二十一）- 洗牌演算法](https://chupai.github.io/posts/2008/shuffle_algorithm/)<br>
 [The Danger of Naïveté](https://blog.codinghorror.com/the-danger-of-naivete/)

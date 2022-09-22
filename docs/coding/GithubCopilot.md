@@ -40,7 +40,7 @@ WTF!!!!簡直太狂了，他還會自己用`loadSgf`跟`sgfToArray`這兩個 fun
 他還判斷出了 X 就代表著黑棋，太神了...<br>
 就是`let sgf = loadSgf(sgf)`這邊有點錯誤就是了，不過因為我們也沒給 input，基本上他的邏輯都是對的，而且還知道要用什麼 function 來處理 sgf 檔，我的天，這真的嚇壞我了。
 
-## python 測試
+## Python 測試
 
 這邊測試的 code 承接上一篇[旋轉棋盤](https://hackmd.io/@Marsgoat/rotate)，就是直接把上一篇的所有 function 都丟進去同個檔案中開始測試，大家可以開啟上一篇自己對比一下。<br>
 一開始就直接放大招，先把本來的`rotate_move`給刪掉，然後交給 copilot 來自己寫。

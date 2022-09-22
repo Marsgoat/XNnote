@@ -339,7 +339,7 @@ public int FactorialForLoop(int n) {
 
 雖然應該沒有人不會，但還是把正解放上來，資訊相關科系大一新生就會的東西，我還寫錯ㄏㄏ。
 
-## reference
+## Reference
 
 [演算法筆記 LIS](https://web.ntnu.edu.tw/~algo/Subsequence.html#2)<br>
 [Longest Increasing Subsequence](https://afteracademy.com/blog/longest-increasing-subsequence)

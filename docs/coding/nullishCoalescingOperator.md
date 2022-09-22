@@ -47,7 +47,7 @@ const xn = undefined ?? '好爛'; // 好爛
 其實我本來是完全不知道`??`這種用法的，真的是學了一課。<br>
 不過更讓我意外的是我弟居然反應這麼快，他是去年下半年才開始自學，準備轉職前端工程師，真的是很認真在學，去年他退伍後不知道要做什麼，不想考公務員也不想當翻譯，我就跟他說阿你語言能力這麼好，不然你學個程式語言如何?反正也是一種語言學學看不虧阿，於是我弟就這樣被我推坑進入了前端工程師的路。
 
-## reference
+## Reference
 
 [Nullish Coalescing Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
 

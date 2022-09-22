@@ -155,7 +155,7 @@ function merge(intervals) {
 [986. Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/)<br>
 這題其實想法一樣，只是變成取交集而已，我就不寫了～
 
-## reference
+## Reference
 
 [唐神筆記-56. Merge Intervals](https://hackmd.io/@XZs7etbeS0ScwmeiGjHDug/SkycrTZhY)
 
