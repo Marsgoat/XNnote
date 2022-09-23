@@ -198,7 +198,7 @@ export default {
 };
 ```
 
-主要是`themeConfig`的一些參數，最先想到的應該就是導覽列那些了吧，這邊可以看[Theme-Nav](https://vitepress.vuejs.org/guide/theme-nav)有比較詳細的說明，我這裡是把`nav`跟`siderbar`寫成 function 看起來比較不會這麼雜亂，其實是一樣的。
+主要是`themeConfig`的一些參數，最先想到的應該就是導覽列那些了吧，這邊可以看[Theme-Nav](https://vitepress.vuejs.org/guide/theme-nav)有比較詳細的說明，我這裡是把`nav`跟`sidebar`寫成 function 看起來比較不會這麼雜亂，其實是一樣的。
 
 ```javascript
 function nav() {
