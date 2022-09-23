@@ -198,7 +198,7 @@ export default {
 };
 ```
 
-這邊可以看[Theme-Nav](https://vitepress.vuejs.org/guide/theme-nav)有比較詳細的說明，我這裡是把`nav`跟`siderbar`寫成 function 看起來比較不會這麼雜亂，其實是一樣的。
+主要是`themeConfig`的一些參數，最先想到的應該就是導覽列那些了吧，這邊可以看[Theme-Nav](https://vitepress.vuejs.org/guide/theme-nav)有比較詳細的說明，我這裡是把`nav`跟`siderbar`寫成 function 看起來比較不會這麼雜亂，其實是一樣的。
 
 ```javascript
 function nav() {
@@ -207,6 +207,23 @@ function nav() {
     { text: '圍棋', link: '/go/', activeMatch: '/go/' },
     { text: '雜談', link: '/chat/', activeMatch: '/chat/' },
     { text: 'coding', link: '/coding/', activeMatch: '/coding/' },
+  ];
+}
+```
+
+```javascript
+function sidebarGo() {
+  return [
+    {
+      text: '圍棋生活',
+      collapsible: true,
+      items: [{ text: '圍棋替代役', link: '/go/TaiwanGoAssociation' }],
+    },
+    {
+      text: '棋評',
+      collapsible: true,
+      items: [{ text: '申之一手', link: '/go/ShinJinSeo' }],
+    },
   ];
 }
 ```
