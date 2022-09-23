@@ -55,7 +55,7 @@ $ npm init -y
 ```
 
 如果懶得填可以直接加個`-y`快速跳過，反正大部分都不會有差。<br>
-好了之後會有兩個檔案，`package.json`跟`package-lock.json`。
+好了之後會出現`package.json`
 
 ### Step. 2: Install VitePress
 
@@ -110,67 +110,38 @@ $ npm run dev
 
 這步實在沒什麼好說明的，就是在你的`docs`資料夾中新增檔案。
 
-## Home Page
-
-首頁就是上面新增的`index.md`<br>
-詳細可以參考[Home Page](https://vitepress.vuejs.org/guide/theme-home-page.html)，我這邊就直接放上我的筆記當範例了。
-
-```yaml
----
-layout: home
-
-title: 小羊的學習筆記
-titleTemplate: 搞笑日常分享
-
-hero:
-  name: 小羊的學習筆記
-  text: 搞笑日常分享
-  tagline: 。
-  image: https://raw.githubusercontent.com/vitejs/vite/main/docs/images/vite.svg
-  actions:
-    - theme: brand
-      text: about
-      link: /about/
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/Marsgoat/XNnote
----
-```
-
-![](https://i.imgur.com/oQhgPG0.png)
-
-右邊太空了就先放張 vite 的圖。<br>
-第 15 行 about 的 link 有兩種寫法。
-
-1. link 直接指定該 md 檔
-
-```
-docs
-├─ index.md
-└─ about.md
-```
-
-這樣上方 link 那行就填入：`link: /about`
-
-2. link 指定位置為資料夾
-
-比如說我新增了一個資料夾為`about`，然後直接在裡面新增一個`index.md`
-
-```
-docs
-├─ about
-│  └─ index.md
-└─ index.md
-```
-
-這樣上方 link 那行就填入：`link: /about/`<br>
-指定路徑為資料夾的話他會自己抓資料夾中檔名為 index 的檔案
-
 ## Configuration
 
-再來就是一些設定檔的設置了，這邊可以看看官方[Config](https://vitepress.vuejs.org/config/introduction.html)的一些設置，我底下會分享我的筆記當做範例，有興趣的可以先參考一下，再自己去爬文檔做修改。
+再來就是一些設定檔的設置了，這邊可以看看官方[Config](https://vitepress.vuejs.org/config/introduction.html)的一些設置。
 
-```shell{5-7}
+```
+.
+├─ docs
+│  ├─ .vitepress
+│  │  └─ config.js
+│  └─ index.md
+├─ node_modules
+├─ .gitignore
+├─ package-lock.json
+└─ package.json
+```
+
+先在`docs`中新增一個`.vitepress`的資料夾，然後新增一個`config.js`的檔案，路徑一定要對，不要亂改名，這個是他預設的。
+
+`config.js`
+
+```javascript
+export default {
+  title: 'VitePress',
+  description: 'Just playing around.',
+};
+```
+
+官方預設的設定只需要上面這些，所以以下可以跳過，這邊我拿我的筆記當範例，分享一些其他設定。
+
+#### XNnote 範例
+
+```
 .
 ├─ docs
 │  ├─ .vitepress
@@ -187,14 +158,13 @@ docs
 
 ![](https://i.imgur.com/NOnfGLj.png)
 
-先在`docs`中新增一個`.vitepress`的資料夾，然後新增一個`config.js`的檔案，路徑一定要對，不要亂改名，這個是他預設的。<br>
-在`.vitepress`資料夾下再新增一個資料夾`theme`，然後新增`custom.css`與`index.js`，這是用來自定義主題、顏色等，一開始可能用不到，但就一樣先建好。
+在`.vitepress`資料夾下再新增一個資料夾`theme`，然後新增`custom.css`與`index.js`，這是用來自定義主題、顏色等。
 
 `config.js`
 
 ```javascript
 export default {
-  base: '/XNnote/',
+  base: '/XNnote/', // 這個跟之後deploy有關，要跟你的repo名稱一樣
   lang: 'zh-Hant-TW',
   title: '小羊的學習筆記',
   description: '搞笑日常',
@@ -265,9 +235,69 @@ export default DefaultTheme;
 
 這邊我只先調了顏色，可以到[github](https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css)上看有哪些預設的 css 設定，可以依照自己的喜好做更改。
 
+## Home Page
+
+首頁就是上面新增的`index.md`<br>
+詳細可以參考[Home Page](https://vitepress.vuejs.org/guide/theme-home-page.html)，我這邊就直接放上我的筆記當範例了。
+
+```yaml
+---
+layout: home
+
+title: 小羊的學習筆記
+titleTemplate: 搞笑日常分享
+
+hero:
+  name: 小羊的學習筆記
+  text: 搞笑日常分享
+  tagline: 。
+  image: https://raw.githubusercontent.com/vitejs/vite/main/docs/images/vite.svg
+  actions:
+    - theme: brand
+      text: about
+      link: /about/
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/Marsgoat/XNnote
+---
+```
+
+![](https://i.imgur.com/oQhgPG0.png)
+
+右邊太空了就先放張 vite 的圖。<br>
+第 15 行 about 的 link 有兩種寫法。
+
+1. link 直接指定該 md 檔
+
+```
+docs
+├─ index.md
+└─ about.md
+```
+
+這樣上方 link 那行就填入：`link: /about`
+
+2. link 指定位置為資料夾
+
+比如說我新增了一個資料夾為`about`，然後直接在裡面新增一個`index.md`
+
+```
+docs
+├─ about
+│  └─ index.md
+└─ index.md
+```
+
+這樣上方 link 那行就填入：`link: /about/`<br>
+指定路徑為資料夾的話他會自己抓資料夾中檔名為 index 的檔案
+
 ## Deploying
 
 這邊我就用 github 當範例，如果要用別的，就一樣參考[官方文檔](https://vitepress.vuejs.org/guide/deploying.html)，在推上去之前最好先在本地測試一下會不會過。
+
+> 這邊被吉神嘴說多此一舉，根本不用額外申請 token，長知識了。<br>
+> 但我還是把申請 token 這段留著，讓大家笑一下。<br>
+> 2022/9/22
 
 ### 本地測試
 
@@ -285,7 +315,14 @@ $ npm run serve
 
 一切都沒有問題的話，就可以進下一步了。
 
-### 使用 Github Actions 自動部署 GitHub Pages
+### 使用 GitHub Actions 自動部署 GitHub Pages
+
+#### 申請 Token
+
+> 這邊被吉神嘴說多此一舉，根本不用額外申請 token，長知識了。<br>
+> 但我還是把申請 token 這段留著，讓大家笑一下。<br>
+> 可以直接跳到[建立 github ations](/coding/vitepress.md#建立-github-actions) 或是參考吉神寫的[vitepress 教學](https://zxkyjimmy.github.io/blog/getting-started.html)<br>
+> 2022/9/22
 
 我們先在 github 做設定，找到`Settings`中的`Developer settings`->`Personal access tokens`然後點選`Generate new token`。
 
@@ -310,6 +347,8 @@ Note 的部分就看你要取什麼，`workflow`這個要勾起來，還有上�
 ![](https://i.imgur.com/opJono1.png)
 
 Name 就是你剛剛取的，Value 就是剛剛生成的 token，如果你忘了複製，那就重新來一次。
+
+#### 建立 GitHub Actions
 
 接著要在專案根目錄新增一個資料夾`.github`，在裡面建一個`workflows`資料夾，最後新增`deploy.yml`
 
@@ -347,6 +386,22 @@ jobs:
 ```
 
 21 行這邊`GITHUB_TOKEN`就是換成前面生成的那個 token。<br>
+
+> 這邊可以不用改，完全是我搞笑了。
+
+最後要在`config.js`中加入`base`，名稱就是你這個 repo 的名稱。
+
+`config.js`
+
+```javascript{2}
+export default {
+  base: '/XNnote/',
+  title: 'VitePress',
+  description: 'Just playing around.'
+  ...
+}
+```
+
 都完成後就推上去就可以了～<br>
 推上去後可以看`actions`就知道現在 deploy 的進度了～沒意外的話應該一兩分鐘內就好了。
 
