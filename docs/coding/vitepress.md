@@ -228,7 +228,8 @@ function sidebarGo() {
 }
 ```
 
-我自己的筆記大概就長得像這樣，目前只有三大類，硬湊一個關於我。
+`sidebarChat`跟`sidebarCoding`也是一樣<br>
+我自己的筆記大概就長得像這樣，目前只有三大類。
 
 `index.js`
 
@@ -503,11 +504,12 @@ export default {
 整體來說體驗還算不錯，期待官方更新快一點，未來有什麼新玩具我也會多多去嘗試的，希望能一直保持對新事物的好奇心，一直開心的學習下去！<br>
 一開始會用 HackMD 是看玉山在用覺得蠻好用的，又是台灣人寫的，就想支持一下，我板上很多大神好像都是用 Medium 比較多，我也是因為看到 Laurice 大神寫的文章，才想要開始來寫，但我要技術沒技術，要文筆沒文筆，又想跟別人不一樣，那我只好走搞笑路線娛樂大眾了。
 
-## reference
+## Reference
 
 [官方文檔](https://vitepress.vuejs.org/)<br>
 [鈞平大大的 blog](https://gpwork4u.github.io/)(他本人表示已放棄這裡 XDD)<br>
 [卷王的筆記](https://sheepndw.github.io/memochou/)<br>
+[吉神的 vitepress 教學](https://zxkyjimmy.github.io/blog/getting-started.html)
 
 ## 新登場人物
 
