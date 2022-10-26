@@ -8,7 +8,7 @@ hero:
   name: 小羊的學習筆記
   text: 搞笑日常分享
   tagline: 。
-  image: https://raw.githubusercontent.com/vitejs/vite/main/docs/images/vite.svg
+  image: /img/logo.png
   actions:
     - theme: brand
       text: about

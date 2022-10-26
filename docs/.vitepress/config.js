@@ -13,12 +13,12 @@ export default {
       'link',
       {
         rel: 'icon',
-        href: 'https://raw.githubusercontent.com/vitejs/vite/main/docs/images/vite.svg',
+        href: '/img/logo.png',
       },
     ],
   ],
   themeConfig: {
-    logo: 'https://raw.githubusercontent.com/vitejs/vite/main/docs/images/vite.svg',
+    logo: '/img/logo.png',
     nav: nav(),
     sidebar: {
       '/go/': sidebarGo(),
