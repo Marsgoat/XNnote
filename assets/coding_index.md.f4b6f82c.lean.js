@@ -1,1 +1,0 @@
-import{_ as e,c as i,o as t,a}from"./app.be102fe8.js";const m=JSON.parse('{"title":"coding","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"coding/index.md"}'),o={name:"coding/index.md"},l=a("",3),n=[l];function r(d,c,s,h,_,f){return t(),i("div",null,n)}const p=e(o,[["render",r]]);export{m as __pageData,p as default};
