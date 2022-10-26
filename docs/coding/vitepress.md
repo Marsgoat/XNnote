@@ -313,10 +313,6 @@ docs
 
 這邊我就用 github 當範例，如果要用別的，就一樣參考[官方文檔](https://vitepress.vuejs.org/guide/deploying.html)，在推上去之前最好先在本地測試一下會不會過。
 
-> 這邊被吉神嘴說多此一舉，根本不用額外申請 token，長知識了。<br>
-> 但我還是把申請 token 這段留著，讓大家笑一下。<br>
-> 2022/9/22
-
 ### 本地測試
 
 ```shell
