@@ -335,7 +335,7 @@ $ npm run serve
 
 > 這邊被吉神嘴說多此一舉，根本不用額外申請 token，長知識了。<br>
 > 但我還是把申請 token 這段留著，讓大家笑一下。<br>
-> 可以直接跳到[建立 github ations](/coding/vitepress.md#建立-github-actions) 或是參考吉神寫的[vitepress 教學](https://zxkyjimmy.github.io/blog/getting-started.html)<br>
+> 可以直接跳到[建立 github actions](/coding/vitepress.md#建立-github-actions) 或是參考吉神寫的[vitepress 教學](https://zxkyjimmy.github.io/blog/getting-started.html)<br>
 > 2022/9/22
 
 我們先在 github 做設定，找到`Settings`中的`Developer settings`->`Personal access tokens`然後點選`Generate new token`。
@@ -419,7 +419,7 @@ export default {
 都完成後就推上去就可以了～<br>
 推上去後可以看`actions`就知道現在 deploy 的進度了～沒意外的話應該一兩分鐘內就好了。
 
-## plugin
+## Plugin
 
 HackMD 用習慣了還真的是挺方便的，用 vitepress 你要用打公式跟畫圖都還得另外裝套件。<br>
 這邊分享遇到的兩個坑，一個是畫圖用的`mermaid`另一個是打公式或是一些數學符號會用到的`latex`
