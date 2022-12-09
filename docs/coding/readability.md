@@ -57,12 +57,18 @@ int complay2(int f, int n) {
 
 ```javascript
 // bad
-if (foo === 123 && bar === 'abc') {
+if (
+  foo === 123 &&
+  bar === 'abc'
+) {
   thing1();
 }
 
 // good
-if (foo === 123 && bar === 'abc') {
+if (
+  foo === 123
+  && bar === 'abc'
+) {
   thing1();
 }
 ```
