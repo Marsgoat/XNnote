@@ -113,5 +113,10 @@ function sidebarCoding() {
         { text: 'VitePress', link: '/coding/vitepress' },
       ],
     },
+    {
+      text: 'LeetCode',
+      collapsible: true,
+      items: [{ text: '每日一題', link: '/coding/leetcodeEveryDay' }],
+    },
   ];
 }
