@@ -359,22 +359,32 @@ outline: deep
 
 <details><summary>題目列表</summary>
 
-| 日期 | 題目                                                                                                |
-| ---- | --------------------------------------------------------------------------------------------------- |
-| 8/1  | [77. Combinations](https://hackmd.io/@Marsgoat/leetcode77)                                          |
-| 8/2  | [46. Permutations](https://hackmd.io/@Marsgoat/leetcode46)                                          |
-| 8/3  | [17. Letter Combinations of a Phone Number](https://hackmd.io/@Marsgoat/leetcode17)                 |
-| 8/4  | [139. Word Break](https://hackmd.io/@Marsgoat/leetcode139)                                          |
-| 8/5  | [95. Unique Binary Search Trees II](https://hackmd.io/@Marsgoat/leetcode95)                         |
-| 8/6  | [920. Number of Music Playlists](https://hackmd.io/@Marsgoat/leetcode920)                           |
-| 8/7  | [74. Search a 2D Matrix](https://hackmd.io/@Marsgoat/leetcode74)                                    |
-| 8/8  | [33. Search in Rotated Sorted Array](https://hackmd.io/@Marsgoat/leetcode33)                        |
-| 8/9  | [2616. Minimize the Maximum Difference of Pairs](https://hackmd.io/@Marsgoat/leetcode2616)          |
-| 8/10 | [81. Search in Rotated Sorted Array II](https://hackmd.io/@Marsgoat/leetcode81)                     |
-| 8/11 | [518. Coin Change II](https://hackmd.io/@Marsgoat/leetcode518)                                      |
-| 8/12 | [63. Unique Paths II](https://hackmd.io/@Marsgoat/leetcode63)                                       |
-| 8/13 | [2369. Check if There is a Valid Partition For The Array](https://hackmd.io/@Marsgoat/leetcode2369) |
-| 8/14 | [215. Kth Largest Element in an Array](https://hackmd.io/@Marsgoat/leetcode215)                     |
+| 日期 | 題目                                                                                                               |
+| ---- | ------------------------------------------------------------------------------------------------------------------ |
+| 8/1  | [77. Combinations](https://hackmd.io/@Marsgoat/leetcode77)                                                         |
+| 8/2  | [46. Permutations](https://hackmd.io/@Marsgoat/leetcode46)                                                         |
+| 8/3  | [17. Letter Combinations of a Phone Number](https://hackmd.io/@Marsgoat/leetcode17)                                |
+| 8/4  | [139. Word Break](https://hackmd.io/@Marsgoat/leetcode139)                                                         |
+| 8/5  | [95. Unique Binary Search Trees II](https://hackmd.io/@Marsgoat/leetcode95)                                        |
+| 8/6  | [920. Number of Music Playlists](https://hackmd.io/@Marsgoat/leetcode920)                                          |
+| 8/7  | [74. Search a 2D Matrix](https://hackmd.io/@Marsgoat/leetcode74)                                                   |
+| 8/8  | [33. Search in Rotated Sorted Array](https://hackmd.io/@Marsgoat/leetcode33)                                       |
+| 8/9  | [2616. Minimize the Maximum Difference of Pairs](https://hackmd.io/@Marsgoat/leetcode2616)                         |
+| 8/10 | [81. Search in Rotated Sorted Array II](https://hackmd.io/@Marsgoat/leetcode81)                                    |
+| 8/11 | [518. Coin Change II](https://hackmd.io/@Marsgoat/leetcode518)                                                     |
+| 8/12 | [63. Unique Paths II](https://hackmd.io/@Marsgoat/leetcode63)                                                      |
+| 8/13 | [2369. Check if There is a Valid Partition For The Array](https://hackmd.io/@Marsgoat/leetcode2369)                |
+| 8/14 | [215. Kth Largest Element in an Array](https://hackmd.io/@Marsgoat/leetcode215)                                    |
+| 8/15 | [86. Partition List](https://hackmd.io/@Marsgoat/leetcode86)                                                       |
+| 8/16 | [239. Sliding Window Maximum](https://hackmd.io/@Marsgoat/leetcode239)                                             |
+| 8/17 | [542. 01 Matrix](https://hackmd.io/@Marsgoat/leetcode542)                                                          |
+| 8/18 | [1615.Maximal Network Rank](https://hackmd.io/@Marsgoat/leetcode1615)                                              |
+| 8/19 | [1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://hackmd.io/@Marsgoat/leetcode1489) |
+| 8/20 | [1203. Sort Items by Groups Respecting Dependencies](https://hackmd.io/@Marsgoat/leetcode1203)                     |
+| 8/21 | [459. Repeated Substring Pattern](https://hackmd.io/@Marsgoat/leetcode459)                                         |
+| 8/22 | [168. Excel Sheet Column Title](https://hackmd.io/@Marsgoat/leetcode168)                                           |
+| 8/23 | [767. Reorganize String](https://hackmd.io/@Marsgoat/leetcode767)                                                  |
+| 8/24 | [68. Text Justification](https://hackmd.io/@Marsgoat/leetcode68)                                                   |
 
 </details>
 
@@ -433,12 +443,14 @@ outline: deep
 - [111. Minimum Depth of Binary Tree](https://hackmd.io/@Marsgoat/leetcode111)
 - [121. Best Time to Buy and Sell Stock](https://hackmd.io/@Marsgoat/leetcode121)
 - [144. Binary Tree Preorder Traversal](https://hackmd.io/@Marsgoat/leetcode144)
+- [168. Excel Sheet Column Title](https://hackmd.io/@Marsgoat/leetcode168)
 - [226. Invert Binary Tree](https://hackmd.io/@Marsgoat/leetcode226)
 - [228. Summary Ranges](https://hackmd.io/@Marsgoat/leetcode228)
 - [232. Implement Queue using Stacks](https://hackmd.io/@Marsgoat/leetcode232)
 - [258. Add Digits](https://hackmd.io/@Marsgoat/leetcode258)
 - [290. Word Pattern](https://hackmd.io/@Marsgoat/leetcode290)
 - [409. Longest Palindrome](https://hackmd.io/@RonChen0927/leetcode409)
+- [459. Repeated Substring Pattern](https://hackmd.io/@Marsgoat/leetcode459)
 - [520. Detect Capital](https://hackmd.io/@Marsgoat/leetcode520)
 - [530. Minimum Absolute Difference in BST](https://hackmd.io/@Marsgoat/leetcode530)
 - [605. Can Place Flowers](https://hackmd.io/@Marsgoat/leetcode605)
@@ -491,6 +503,7 @@ outline: deep
 - [77. Combinations](https://hackmd.io/@Marsgoat/leetcode77)
 - [79. Word Search](https://hackmd.io/@Marsgoat/leetcode79)
 - [81. Search in Rotated Sorted Array II](https://hackmd.io/@Marsgoat/leetcode81)
+- [86. Partition List](https://hackmd.io/@Marsgoat/leetcode86)
 - [93. Restore IP Addresses](https://hackmd.io/@Marsgoat/leetcode93)
 - [95. Unique Binary Search Trees II](https://hackmd.io/@Marsgoat/leetcode95)
 - [98. Validate Binary Search Tree](https://hackmd.io/@Marsgoat/leetcode98)
@@ -535,6 +548,7 @@ outline: deep
 - [491. Non-decreasing Subsequences](https://hackmd.io/@Marsgoat/leetcode491)
 - [518. Coin Change II](https://hackmd.io/@Marsgoat/leetcode518)
 - [540. Single Element in a Sorted Array](https://hackmd.io/@Marsgoat/leetcode540)
+- [542. 01 Matrix](https://hackmd.io/@Marsgoat/leetcode542)
 - [547. Number of Provinces](https://hackmd.io/@Marsgoat/leetcode547)
 - [567. Permutation in String](https://hackmd.io/@Marsgoat/leetcode567)
 - [649. Dota2 Senate](https://hackmd.io/@Marsgoat/leetcode649)
@@ -547,6 +561,7 @@ outline: deep
 - [714. Best Time to Buy and Sell Stock with Transaction Fee](https://hackmd.io/@Marsgoat/H1YZ9l7dn)
 - [735. Asteroid Collision](https://hackmd.io/@Marsgoat/leetcode735)
 - [739. Daily Temperatures](https://hackmd.io/@Marsgoat/leetcode739)
+- [767. Reorganize String](https://hackmd.io/@Marsgoat/leetcode767)
 - [787. Cheapest Flights Within K Stops](https://hackmd.io/@Marsgoat/leetcode787)
 - [790. Domino and Tromino Tiling](https://hackmd.io/@Marsgoat/leetcode790)
 - [791. Custom Sort String](https://hackmd.io/@skylanly/leetcode791)
@@ -602,6 +617,7 @@ outline: deep
 - [1514. Path with Maximum Probability](https://hackmd.io/@Marsgoat/B15eOMt_h)
 - [1519. Number of Nodes in the Sub-Tree With the Same Label](https://hackmd.io/@Marsgoat/leetcode1519)
 - [1557. Minimum Number of Vertices to Reach All Nodes](https://hackmd.io/@Marsgoat/leetcode1557)
+- [1615.Maximal Network Rank](https://hackmd.io/@Marsgoat/leetcode1615)
 - [1626. Best Team With No Conflicts](https://hackmd.io/@Marsgoat/leetcode1626)
 - [1657. Determine if Two Strings Are Close](https://hackmd.io/@Marsgoat/leetcode1657)
 - [1721. Swapping Nodes in a Linked List](https://hackmd.io/@Marsgoat/leetcode1721)
@@ -647,10 +663,12 @@ outline: deep
 <details><summary>題目列表</summary>
 
 - [23. Merge k Sorted Lists](https://hackmd.io/@Marsgoat/leetcode23)
+- [68. Text Justification](https://hackmd.io/@Marsgoat/leetcode68)
 - [72. Edit Distance](https://hackmd.io/@Marsgoat/leetcode72)
 - [87. Scramble String](https://hackmd.io/@Marsgoat/leetcode87)
 - [124. Binary Tree Maximum Path Sum](https://hackmd.io/@Marsgoat/leetcode124)
 - [149. Max Points on a Line](https://hackmd.io/@Marsgoat/leetcode149)
+- [239. Sliding Window Maximum](https://hackmd.io/@Marsgoat/leetcode239)
 - [352. Data Stream as Disjoint Intervals](https://hackmd.io/@Marsgoat/leetcode352)
 - [446. Arithmetic Slices II - Subsequence](https://hackmd.io/@Marsgoat/leetcode446)
 - [460. LFU Cache](https://hackmd.io/@Marsgoat/leetcode460)
@@ -665,6 +683,7 @@ outline: deep
 - [980. Unique Paths III](https://hackmd.io/@Marsgoat/leetcode980)
 - [1125. Smallest Sufficient Team](https://hackmd.io/@Marsgoat/leetcode1125)
 - [1187. Make Array Strictly Increasing](https://hackmd.io/@Marsgoat/BJdXkOEOh)
+- [1203. Sort Items by Groups Respecting Dependencies](https://hackmd.io/@Marsgoat/leetcode1203)
 - [1235. Maximum Profit in Job Scheduling](https://hackmd.io/@Marsgoat/leetcode1235)
 - [1289. Minimum Falling Path Sum II](https://hackmd.io/@Marsgoat/leetcode1289)
 - [1312. Minimum Insertion Steps to Make a String Palindrome](https://hackmd.io/@Marsgoat/leetcode1312)
@@ -672,6 +691,7 @@ outline: deep
 - [1406. Stone Game III](https://hackmd.io/@Marsgoat/leetcode1406)
 - [1416. Restore The Array](https://hackmd.io/@Marsgoat/leetcode1416)
 - [1444. Number of Ways of Cutting a Pizza](https://hackmd.io/@Marsgoat/leetcode1444)
+- [1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://hackmd.io/@Marsgoat/leetcode1489)
 - [1547. Minimum Cost to Cut a Stick](https://hackmd.io/@Marsgoat/leetcode1547)
 - [1569. Number of Ways to Reorder Array to Get Same BST](https://hackmd.io/@Marsgoat/leetcode1569)
 - [1575. Count All Possible Routes](https://hackmd.io/@Marsgoat/BJpu4arO3)
@@ -712,6 +732,7 @@ outline: deep
 - [57. Insert Interval](https://hackmd.io/@Marsgoat/leetcode57)
 - [63. Unique Paths II](https://hackmd.io/@Marsgoat/leetcode63)
 - [64. Minimum Path Sum](https://hackmd.io/@Marsgoat/leetcode64)
+- [68. Text Justification](https://hackmd.io/@Marsgoat/leetcode68)
 - [79. Word Search](https://hackmd.io/@Marsgoat/leetcode79)
 - [81. Search in Rotated Sorted Array II](https://hackmd.io/@Marsgoat/leetcode81)
 - [106. Construct Binary Tree from Inorder and Postorder Traversal](https://hackmd.io/@Marsgoat/leetcode106)
@@ -726,6 +747,7 @@ outline: deep
 - [209. Minimum Size Subarray Sum](https://hackmd.io/@Marsgoat/leetcode209)
 - [215. Kth Largest Element in an Array](https://hackmd.io/@Marsgoat/leetcode215)
 - [228. Summary Ranges](https://hackmd.io/@Marsgoat/leetcode228)
+- [239. Sliding Window Maximum](https://hackmd.io/@Marsgoat/leetcode239)
 - [309. Best Time to Buy and Sell Stock with Cooldown](https://hackmd.io/@Marsgoat/leetcode309)
 - [347. Top K Frequent Elements](https://hackmd.io/@Marsgoat/leetcode347)
 - [373. Find K Pairs with Smallest Sums](https://hackmd.io/@Marsgoat/rkNbuavO3)
@@ -741,6 +763,7 @@ outline: deep
 - [502. IPO](https://hackmd.io/@Marsgoat/leetcode502)
 - [518. Coin Change II](https://hackmd.io/@Marsgoat/leetcode518)
 - [540. Single Element in a Sorted Array](https://hackmd.io/@Marsgoat/leetcode540)
+- [542. 01 Matrix](https://hackmd.io/@Marsgoat/leetcode542)
 - [605. Can Place Flowers](https://hackmd.io/@Marsgoat/leetcode605)
 - [673. Number of Longest Increasing Subsequence](https://hackmd.io/@Marsgoat/leetcode673)
 - [704. Binary Search](https://hackmd.io/@Marsgoat/leetcode704)
@@ -849,6 +872,7 @@ outline: deep
 <details><summary>題目列表</summary>
 
 - [23. Merge k Sorted Lists](https://hackmd.io/@Marsgoat/leetcode23)
+- [86. Partition List](https://hackmd.io/@Marsgoat/leetcode86)
 - [109. Convert Sorted List to Binary Search Tree](https://hackmd.io/@Marsgoat/leetcode109)
 - [142. Linked List Cycle II](https://hackmd.io/@Marsgoat/leetcode142)
 - [146. LRU Cache](https://hackmd.io/@Marsgoat/leetcode146)
@@ -873,6 +897,7 @@ outline: deep
 - [64. Minimum Path Sum](https://hackmd.io/@Marsgoat/leetcode64)
 - [79. Word Search](https://hackmd.io/@Marsgoat/leetcode79)
 - [427. Construct Quad Tree](https://hackmd.io/@Marsgoat/leetcode427)
+- [542. 01 Matrix](https://hackmd.io/@Marsgoat/leetcode542)
 - [909. Snakes and Ladders](https://hackmd.io/@Marsgoat/leetcode909)
 - [931. Minimum Falling Path Sum](https://hackmd.io/@Marsgoat/leetcode931)
 - [934. Shortest Bridge](https://hackmd.io/@Marsgoat/leetcode934)
@@ -899,12 +924,14 @@ outline: deep
 - [20. Valid Parentheses](https://hackmd.io/@Marsgoat/leetcode20)
 - [28. Find the Index of the First Occurrence in a String](https://hackmd.io/@Marsgoat/leetcode28)
 - [67. Add Binary](https://hackmd.io/@Marsgoat/leetcode67)
+- [68. Text Justification](https://hackmd.io/@Marsgoat/leetcode68)
 - [71. Simplify Path](https://hackmd.io/@Marsgoat/leetcode71)
 - [72. Edit Distance](https://hackmd.io/@Marsgoat/leetcode72)
 - [87. Scramble String](https://hackmd.io/@Marsgoat/leetcode87)
 - [93. Restore IP Addresses](https://hackmd.io/@Marsgoat/leetcode93)
 - [131. Palindrome Partitioning](https://hackmd.io/@Marsgoat/leetcode131)
 - [139. Word Break](https://hackmd.io/@Marsgoat/leetcode139)
+- [168. Excel Sheet Column Title](https://hackmd.io/@Marsgoat/leetcode168)
 - [208. Implement Trie (Prefix Tree)](https://hackmd.io/@Marsgoat/leetcode208)
 - [211. Design Add and Search Words Data Structure](https://hackmd.io/@Marsgoat/leetcode211)
 - [290. Word Pattern](https://hackmd.io/@Marsgoat/leetcode290)
@@ -913,11 +940,13 @@ outline: deep
 - [443. String Compression](https://hackmd.io/@Marsgoat/leetcode443)
 - [451. Sort Characters By Frequency](https://hackmd.io/@Marsgoat/leetcode451)
 - [472. Concatenated Words](https://hackmd.io/@Marsgoat/leetcode472)
+- [459. Repeated Substring Pattern](https://hackmd.io/@Marsgoat/leetcode459)
 - [520. Detect Capital](https://hackmd.io/@Marsgoat/leetcode520)
 - [567. Permutation in String](https://hackmd.io/@Marsgoat/leetcode567)
 - [649. Dota2 Senate](https://hackmd.io/@Marsgoat/leetcode649)
 - [664. Strange Printer](https://hackmd.io/@Marsgoat/leetcode664)
 - [712. Minimum ASCII Delete Sum for Two Strings](https://hackmd.io/@Marsgoat/leetcode712)
+- [767. Reorganize String](https://hackmd.io/@Marsgoat/leetcode767)
 - [791. Custom Sort String](https://hackmd.io/@skylanly/leetcode791)
 - [839. Similar String Groups](https://hackmd.io/@Marsgoat/leetcode839)
 - [859. Buddy Strings](https://hackmd.io/@Marsgoat/leetcode859)
@@ -949,6 +978,7 @@ outline: deep
 - [70. Climbing Stairs](https://hackmd.io/@Marsgoat/leetcode70)
 - [149. Max Points on a Line](https://hackmd.io/@Marsgoat/leetcode149)
 - [150. Evaluate Reverse Polish Notation](https://hackmd.io/@Marsgoat/leetcode150)
+- [168. Excel Sheet Column Title](https://hackmd.io/@Marsgoat/leetcode168)
 - [258. Add Digits](https://hackmd.io/@Marsgoat/leetcode258)
 - [279. Perfect Squares](https://hackmd.io/@Marsgoat/leetcode279)
 - [319. Bulb Switcher](https://hackmd.io/@Marsgoat/leetcode319)
@@ -1001,6 +1031,7 @@ outline: deep
 - [144. Binary Tree Preorder Traversal](https://hackmd.io/@Marsgoat/leetcode144)
 - [150. Evaluate Reverse Polish Notation](https://hackmd.io/@Marsgoat/leetcode150)
 - [232. Implement Queue using Stacks](https://hackmd.io/@Marsgoat/leetcode232)
+- [239. Sliding Window Maximum](https://hackmd.io/@Marsgoat/leetcode239)
 - [445. Add Two Numbers II](https://hackmd.io/@Marsgoat/leetcode445)
 - [649. Dota2 Senate](https://hackmd.io/@Marsgoat/leetcode649)
 - [735. Asteroid Collision](https://hackmd.io/@Marsgoat/leetcode735)
@@ -1035,6 +1066,7 @@ outline: deep
 - [438. Find All Anagrams in a String](https://hackmd.io/@Marsgoat/leetcode438)
 - [451. Sort Characters By Frequency](https://hackmd.io/@Marsgoat/leetcode451)
 - [460. LFU Cache](https://hackmd.io/@Marsgoat/leetcode460)
+- [767. Reorganize String](https://hackmd.io/@Marsgoat/leetcode767)
 - [491. Non-decreasing Subsequences](https://hackmd.io/@Marsgoat/leetcode491)
 - [567. Permutation in String](https://hackmd.io/@Marsgoat/leetcode567)
 - [652. Find Duplicate Subtrees](https://hackmd.io/@Marsgoat/leetcode652)
@@ -1092,6 +1124,7 @@ outline: deep
 - [605. Can Place Flowers](https://hackmd.io/@Marsgoat/leetcode605)
 - [649. Dota2 Senate](https://hackmd.io/@Marsgoat/leetcode649)
 - [714. Best Time to Buy and Sell Stock with Transaction Fee](https://hackmd.io/@Marsgoat/H1YZ9l7dn)
+- [767. Reorganize String](https://hackmd.io/@Marsgoat/leetcode767)
 - [881. Boats to Save People](https://hackmd.io/@Marsgoat/leetcode881)
 - [1402. Reducing Dishes](https://hackmd.io/@Marsgoat/leetcode1402)
 - [1675. Minimize Deviation in Array](https://hackmd.io/@Marsgoat/leetcode1675)
@@ -1135,6 +1168,7 @@ outline: deep
 <details><summary>題目列表</summary>
 
 - [28. Find the Index of the First Occurrence in a String](https://hackmd.io/@Marsgoat/leetcode28)
+- [86. Partition List](https://hackmd.io/@Marsgoat/leetcode86)
 - [142. Linked List Cycle II](https://hackmd.io/@Marsgoat/leetcode142)
 - [443. String Compression](https://hackmd.io/@Marsgoat/leetcode443)
 - [567. Permutation in String](https://hackmd.io/@Marsgoat/leetcode567)
@@ -1153,8 +1187,8 @@ outline: deep
 
 <details><summary>題目列表</summary>
 
-- [209. Minimum Size Subarray Sum
-  ](https://hackmd.io/@Marsgoat/leetcode209)
+- [209. Minimum Size Subarray Sum](https://hackmd.io/@Marsgoat/leetcode209)
+- [239. Sliding Window Maximum](https://hackmd.io/@Marsgoat/leetcode239)
 - [438. Find All Anagrams in a String](https://hackmd.io/@Marsgoat/leetcode438)
 - [567. Permutation in String](https://hackmd.io/@Marsgoat/leetcode567)
 - [837. New 21 Game](https://hackmd.io/@Marsgoat/leetcode837)
@@ -1178,11 +1212,13 @@ outline: deep
 - [451. Sort Characters By Frequency](https://hackmd.io/@Marsgoat/leetcode451)
 - [452. Minimum Number of Arrows to Burst Balloons](https://hackmd.io/@Marsgoat/leetcode452)
 - [502. IPO](https://hackmd.io/@Marsgoat/leetcode502)
+- [767. Reorganize String](https://hackmd.io/@Marsgoat/leetcode767)
 - [791. Custom Sort String](https://hackmd.io/@skylanly/leetcode791)
 - [881. Boats to Save People](https://hackmd.io/@Marsgoat/leetcode881)
 - [912. Sort an Array](https://hackmd.io/@Marsgoat/leetcode912)
 - [1235. Maximum Profit in Job Scheduling](https://hackmd.io/@Marsgoat/leetcode1235)
 - [1402. Reducing Dishes](https://hackmd.io/@Marsgoat/leetcode1402)
+- [1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://hackmd.io/@Marsgoat/leetcode1489)
 - [1491. Average Salary Excluding the Minimum and Maximum Salary](https://hackmd.io/@Marsgoat/leetcode1491)
 - [1498. Number of Subsequences That Satisfy the Given Sum Condition](https://hackmd.io/@Marsgoat/leetcode1498)
 - [1502. Can Make Arithmetic Progression From Sequence](https://hackmd.io/@Marsgoat/leetcode1502)
@@ -1251,12 +1287,14 @@ outline: deep
 <details><summary>題目列表</summary>
 
 - [23. Merge k Sorted Lists](https://hackmd.io/@Marsgoat/leetcode23)
+- [239. Sliding Window Maximum](https://hackmd.io/@Marsgoat/leetcode239)
 - [215. Kth Largest Element in an Array](https://hackmd.io/@Marsgoat/leetcode215)
 - [347. Top K Frequent Elements](https://hackmd.io/@Marsgoat/leetcode347)
 - [373. Find K Pairs with Smallest Sums](https://hackmd.io/@Marsgoat/rkNbuavO3)
 - [451. Sort Characters By Frequency](https://hackmd.io/@Marsgoat/leetcode451)
 - [502. IPO](https://hackmd.io/@Marsgoat/leetcode502)
 - [703. Kth Largest Element in a Stream](https://hackmd.io/@Marsgoat/leetcode703)
+- [767. Reorganize String](https://hackmd.io/@Marsgoat/leetcode767)
 - [787. Cheapest Flights Within K Stops](https://hackmd.io/@Marsgoat/leetcode787)
 - [1046. Last Stone Weight](https://hackmd.io/@Marsgoat/leetcode1046)
 - [1514. Path with Maximum Probability](https://hackmd.io/@Marsgoat/B15eOMt_h)
@@ -1327,6 +1365,7 @@ outline: deep
 - [399. Evaluate Division](https://hackmd.io/@Marsgoat/leetcode399)
 - [472. Concatenated Words](https://hackmd.io/@Marsgoat/leetcode472)
 - [530. Minimum Absolute Difference in BST](https://hackmd.io/@Marsgoat/leetcode530)
+- [542. 01 Matrix](https://hackmd.io/@Marsgoat/leetcode542)
 - [547. Number of Provinces](https://hackmd.io/@Marsgoat/leetcode547)
 - [652. Find Duplicate Subtrees](https://hackmd.io/@Marsgoat/leetcode652)
 - [662. Maximum Width of Binary Tree](https://hackmd.io/@Marsgoat/leetcode662)
@@ -1350,6 +1389,7 @@ outline: deep
 - [1129. Shortest Path with Alternating Colors](https://hackmd.io/@Marsgoat/leetcode1129)
 - [1161. Maximum Level Sum of a Binary Tree](https://hackmd.io/@Marsgoat/leetcode1161)
 - [1162. As Far from Land as Possible](https://hackmd.io/@Marsgoat/leetcode1162)
+- [1203. Sort Items by Groups Respecting Dependencies](https://hackmd.io/@Marsgoat/leetcode1203)
 - [1319. Number of Operations to Make Network Connected](https://hackmd.io/@Marsgoat/leetcode1319)
 - [1339. Maximum Product of Splitted Binary Tree](https://hackmd.io/@Marsgoat/leetcode1339)
 - [1345. Jump Game IV](https://hackmd.io/@Marsgoat/leetcode1345)
@@ -1410,6 +1450,7 @@ outline: deep
 - [472. Concatenated Words](https://hackmd.io/@Marsgoat/leetcode472)
 - [486. Predict the Winner](https://hackmd.io/@Marsgoat/leetcode486)
 - [518. Coin Change II](https://hackmd.io/@Marsgoat/leetcode518)
+- [542. 01 Matrix](https://hackmd.io/@Marsgoat/leetcode542)
 - [664. Strange Printer](https://hackmd.io/@Marsgoat/leetcode664)
 - [673. Number of Longest Increasing Subsequence](https://hackmd.io/@Marsgoat/leetcode673)
 - [688. Knight Probability in Chessboard](https://hackmd.io/@Marsgoat/leetcode688)
@@ -1482,11 +1523,14 @@ outline: deep
 - [886. Possible Bipartition](https://hackmd.io/@Marsgoat/leetcode886)
 - [997. Find the Town Judge](https://hackmd.io/@Marsgoat/leetcode997)
 - [1129. Shortest Path with Alternating Colors](https://hackmd.io/@Marsgoat/leetcode1129)
+- [1203. Sort Items by Groups Respecting Dependencies](https://hackmd.io/@Marsgoat/leetcode1203)
 - [1319. Number of Operations to Make Network Connected](https://hackmd.io/@Marsgoat/leetcode1319)
 - [1466. Reorder Routes to Make All Paths Lead to the City Zero](https://hackmd.io/@Marsgoat/leetcode1466)
+- [1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://hackmd.io/@Marsgoat/leetcode1489)
 - [1514. Path with Maximum Probability](https://hackmd.io/@Marsgoat/B15eOMt_h)
 - [1557. Minimum Number of Vertices to Reach All Nodes](https://hackmd.io/@Marsgoat/leetcode1557)
 - [1579. Remove Max Number of Edges to Keep Graph Fully Traversable](https://hackmd.io/@Marsgoat/leetcode1579)
+- [1615.Maximal Network Rank](https://hackmd.io/@Marsgoat/leetcode1615)
 - [1697. Checking Existence of Edge Length Limited Paths](https://hackmd.io/@Marsgoat/leetcode1697)
 - [1857. Largest Color Value in a Directed Graph](https://hackmd.io/@Marsgoat/leetcode1857)
 - [1971. Find if Path Exists in Graph](https://hackmd.io/@Marsgoat/leetcode1971)
