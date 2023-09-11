@@ -17,3 +17,6 @@ outline: deep
 - [9.2022 面試白板題](/coding/interview2022-leetcode.md)
 - [10.Merge Intervals](/coding/mergeIntervals.md)
 - [11.VitePress](/coding/vitepress.md)
+- [12.Binary Search](/coding/BinarySearch.md)
+
+[Leetcode 每日一題](/coding/leetcodeEveryDay.md)
