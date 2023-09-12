@@ -63,7 +63,8 @@ outline: deep
 
 ### 應用題
 
-這邊是我自己認為沒寫過類似題會想不到可以用 Binary Search 來解的題目，有時候不只會用到 Binary Search，其實這邊題目都大同小異，只有縮小邊界的條件不一樣而已，可以自己挑題目練習也可以依照題目難度來寫，前五題我覺得都是一樣的，看起來是比較新的題目分數較低，可能因為週賽參賽的人數越來越多，有變比較難打，或是類似題多了大家也變得更強了，畢竟現在網路上資源也越來越多了，開始卷起來了。
+這邊是我自己認為沒寫過類似題會想不到可以用 Binary Search 來解的題目，<font v-pre color="#c2534c">這邊應該就是 Binary Search 的精華了</font>，畢竟前面的題目考了大家都會，只有考這類應用題才有一點鑑別度，有時候不只會用到 Binary Search，不過寫多了這邊題目也都大同小異，只有縮小邊界的條件不一樣而已。<br>
+可以自己挑題目練習也可以依照題目難度來寫，前五題我覺得都是一樣的，看起來是比較新的題目分數較低，可能因為週賽參賽的人數越來越多，有變比較難打，或是類似題多了大家也變得更強了，畢竟現在網路上資源也越來越多了，開始卷起來了。
 
 | 題目                                                                                                                                                  | 分數 |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
@@ -225,6 +226,90 @@ class Solution:
 
         return -1
 ```
+
+再來看一題 2187. Minimum Time to Complete Trips<br>
+使用模板的優點超明顯，主要程式的部分幾乎一模一樣，只要思考`canFinish`的部分
+
+::: code-group
+
+```python
+class Solution:
+    def minimumTime(self, time: List[int], totalTrips: int) -> int:
+        def canFinish(time, totalTrips, mid) -> bool:
+            trips = 0
+            for t in time:
+                trips += mid // t
+            return trips >= totalTrips
+
+        left = 0
+        right = max(time) * totalTrips
+        while left < right:
+            mid = (left + right) // 2
+            if canFinish(time, totalTrips, mid):
+                right = mid
+            else:
+                left = mid + 1
+
+        return left
+```
+
+```javascript
+function minimumTime(time, totalTrips) {
+  function canFinish(time, mid) {
+    let trip = 0;
+    for (const t of time) {
+      trip += Math.floor(mid / t);
+    }
+
+    return trip >= totalTrips;
+  }
+
+  let left = 0;
+  let right = Math.max(...time) * totalTrips;
+
+  while (left < right) {
+    const mid = Math.floor((left + right) / 2);
+    if (canFinish(time, mid)) {
+      right = mid;
+    } else {
+      left = mid + 1;
+    }
+  }
+
+  return left;
+}
+```
+
+```cpp
+class Solution {
+public:
+    long long minimumTime(vector<int>& time, int totalTrips) {
+        long long left = 0;
+        long long right = 1LL *  *max_element(time.begin(), time.end()) * totalTrips;
+
+        while(left < right) {
+            long long mid = left + (right - left) / 2;
+            if(canFinish(time, totalTrips, mid)) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+
+        return left;
+    }
+
+    bool canFinish(vector<int>& time, int totalTrips, long long mid) {
+        long long trips = 0;
+        for(int t : time) {
+            trips += mid / t;
+        }
+        return trips >= totalTrips;
+    }
+};
+```
+
+:::
 
 <br>
 一開始使用模板可能會稍微有點不習慣，因為每個人的寫 code 習慣都不同，硬是要改成一個制式化的寫法，應該很多人都不喜歡，尤其不打週賽的人更會覺得沒必要，但我覺得一個好的模板不只是讓你打週賽時更快的解決問題而已，在面試時也可以<font v-pre color="#c2534c">更容易讓面試官看得懂</font>，所以平常在刷題時我不是追求要什麼 beat 99%，<font v-pre color="#c2534c">我更在乎的是我寫出來的 code 可讀性高不高，能不能清楚的表達我在寫什麼東西</font>，這時候一個好的模板就很方便了，畢竟你看過我看過獨眼龍也看過，面試官當然也會看過囉，有可能你都不必解釋太多，面試官看兩行就知道你想寫什麼了，尤其是對於我這種新手來說直接學習大神們寫的 code 會更容易上手。
