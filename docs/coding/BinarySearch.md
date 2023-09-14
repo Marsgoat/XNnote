@@ -309,6 +309,38 @@ public:
 };
 ```
 
+```java
+class Solution {
+    public long minimumTime(int[] time, int totalTrips) {
+        long left = 0;
+        int maxTime = 0;
+        for (int t : time) {
+            maxTime = Math.max(maxTime, t);
+        }
+        long right = (long) maxTime * totalTrips;
+
+        while (left < right) {
+            long mid = left + (right - left) / 2;
+            if(canFinish(time, totalTrips, mid)) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+
+        return left;
+    }
+
+    public boolean canFinish(int [] time, int totalTrips, long mid) {
+        long trips = 0;
+        for (int t : time) {
+            trips += mid / t;
+        }
+        return trips >= totalTrips;
+    }
+}
+```
+
 :::
 
 <br>
