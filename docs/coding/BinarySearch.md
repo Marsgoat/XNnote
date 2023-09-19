@@ -13,6 +13,8 @@ outline: deep
 
 如果在面試時你已經解出了一個 $O(n)$ 的解，面試官仍然不滿意，那 99%就是要你使用 Binary Search 了，除非是有 $O(1)$ 的解，但我覺得這比較少見，有些可能都是用數學解，比較不容易在面試時出現(吧)。
 
+以下是我整理過的題目，推薦給大家，讓新手可以有個比較好的學習順序，如果是老手也能在複習的時候快速的找到題目。
+
 ### 基礎題
 
 一開始就直接寫這題吧，題目都告訴你是 Binary Search 了
@@ -32,33 +34,34 @@ outline: deep
 
 不知道從哪題開始的話每一類的順序都建議由上往下寫
 
-- 部分排序或有重複值
+- #### 部分排序或有重複值
 
   - [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/)
   - [852. Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)
   - [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
   - [540. Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)
 
-- 二維陣列
+- #### 二維陣列
 
   - [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)
   - [240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)
 
-- 旋轉類
+- #### 旋轉類
 
   - [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
   - [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)
   - [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
   - [154. Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)
 
-- 數學類
+- #### 數學類
 
   - [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)
   - [367. Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)
   - [1201. Ugly Number III](https://leetcode.com/problems/ugly-number-iii/)
   - [668. Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/)
 
-- 不知道怎麼分類
+- #### 不知道怎麼分類
+
   - [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/)
 
 ### 應用題
@@ -123,9 +126,33 @@ def binary_search(array) -> int:
     return left
 ```
 
-每題都變成只要考慮第八行中`if`的條件，其他部分都不用動，再也不用想什麼`+1` `-1` `<`跟`<=`了
+每題都變成只要考慮第八行中`if`的條件，這個就是縮小邊界的條件，其他部分都不用動，再也不用想什麼`+1` `-1` `<`跟`<=`了，等於把所有需要思考條件的部分都集中到一個地方了。<br>
+原理我這邊都不解釋了直接用題目分享，如果沒有很熟的人一定要把上面的文章仔細讀過。<br>
 
-以 704 題為例，直接上參考答案，這是我使用模板後寫的。
+#### 題目實例
+
+以 704 題為例，我問了不少人，包含我自己，一開始寫的時候都是像下面這樣寫的。<br>
+其實都可以，只是使用模板會方便很多，如果上面的題目有練習過的話應該就會懂我在說什麼。
+
+```python
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        left = 0
+        right = len(nums) - 1
+
+        while left <= right:
+            mid = (left + right) // 2
+            if nums[mid] == target:
+                return mid
+            if nums[mid] > target:
+                right = mid - 1
+            else:
+                left = mid + 1
+
+        return -1
+```
+
+接下來使用模板改寫
 
 ::: code-group
 
@@ -206,29 +233,30 @@ class Solution {
 
 :::
 
-我問了不少人，包含我自己，一開始寫的時候都是像下面這樣寫的。<br>
-其實都可以，只是使用模板會方便很多，如果上面的題目有練習過的話應該就會懂我在說什麼。
+只看一題還沒辦法感受模板的魅力，再來看一題 2187. Minimum Time to Complete Trips<br>
 
-```python
-class Solution:
-    def searchInsert(self, nums: List[int], target: int) -> int:
-        left = 0
-        right = len(nums) - 1
+![](https://hackmd.io/_uploads/B1S1ITIJ6.png)
 
-        while left <= right:
-            mid = (left + right) // 2
-            if nums[mid] == target:
-                return mid
-            if nums[mid] > target:
-                right = mid - 1
-            else:
-                left = mid + 1
+題目給了每輛公車行駛一趟的時間`time`，給了目標的趟數`totalTrips`，求完成目標趟數的最短時間。<br>
 
-        return -1
+```
+Input: time = [1,2,3], totalTrips = 5
+Output: 3
 ```
 
-再來看一題 2187. Minimum Time to Complete Trips<br>
-使用模板的優點超明顯，主要程式的部分幾乎一模一樣，只要思考`canFinish`的部分
+最簡單的想法就是暴力解，用猜的。<br>
+例如從 1 開始猜，看看所有公車行駛 1 時間後能否完成目標的趟數，發現行使 1 時間只有`time[0]`這台公車可以完成一趟。<br>
+行使 2 時間，`time[0]`公車可以完成兩趟、`time[1]`公車可以完成一趟，還是達不到五趟，繼續往下猜。<br>
+行使 3 時間，`time[0]`完成了三趟、`time[1]`完成了一趟、`time[2]`完成了一趟，總共五趟達成目標。<br>
+
+再來思考一下，該怎麼優化，我們就會想到用 Binary Search 來猜答案。<br>
+
+解題步驟：
+
+1. 定義邊界：<br>
+   可能的最短時間很簡單就是一次完成，最長時間應該會是 `time` 中每趟時間最短的公車直接開到符合`totalTrips`
+2. 思考縮小邊界的條件：<br>
+   假設我們猜的時間為`t`，每台公車能完成的趟數就是`time[i] / t`，加總後看有沒有符合`totalTrips`，如果小於`totalTrips`就代表我們猜的時間太短了，如果超過了或是一樣，則代表我們可能猜多了或是這就是答案。
 
 ::: code-group
 
@@ -241,8 +269,8 @@ class Solution:
                 trips += mid // t
             return trips >= totalTrips
 
-        left = 0
-        right = max(time) * totalTrips
+        left = 1
+        right = min(time) * totalTrips
         while left < right:
             mid = (left + right) // 2
             if canFinish(time, totalTrips, mid):
@@ -264,8 +292,8 @@ function minimumTime(time, totalTrips) {
     return trip >= totalTrips;
   }
 
-  let left = 0;
-  let right = Math.max(...time) * totalTrips;
+  let left = 1;
+  let right = Math.min(...time) * totalTrips;
 
   while (left < right) {
     const mid = Math.floor((left + right) / 2);
@@ -284,8 +312,8 @@ function minimumTime(time, totalTrips) {
 class Solution {
 public:
     long long minimumTime(vector<int>& time, int totalTrips) {
-        long long left = 0;
-        long long right = 1LL *  *max_element(time.begin(), time.end()) * totalTrips;
+        long long left = 1;
+        long long right = 1LL *  *min_element(time.begin(), time.end()) * totalTrips;
 
         while(left < right) {
             long long mid = left + (right - left) / 2;
@@ -312,10 +340,10 @@ public:
 ```java
 class Solution {
     public long minimumTime(int[] time, int totalTrips) {
-        long left = 0;
+        long left = 1;
         int maxTime = 0;
         for (int t : time) {
-            maxTime = Math.max(maxTime, t);
+            maxTime = Math.min(maxTime, t);
         }
         long right = (long) maxTime * totalTrips;
 
@@ -343,7 +371,11 @@ class Solution {
 
 :::
 
-<br>
+使用模板的優點超明顯，主要程式的部分幾乎一模一樣，只要思考`canFinish`的部分，所有題目都可以轉換成這種形式。<br>
+可以多練習幾題去感受一下
+
+### 心得
+
 一開始使用模板可能會稍微有點不習慣，因為每個人的寫 code 習慣都不同，硬是要改成一個制式化的寫法，應該很多人都不喜歡，尤其不打週賽的人更會覺得沒必要，但我覺得一個好的模板不只是讓你打週賽時更快的解決問題而已，在面試時也可以<font v-pre color="#c2534c">更容易讓面試官看得懂</font>，所以平常在刷題時我不是追求要什麼 beat 99%，<font v-pre color="#c2534c">我更在乎的是我寫出來的 code 可讀性高不高，能不能清楚的表達我在寫什麼東西</font>，這時候一個好的模板就很方便了，畢竟你看過我看過獨眼龍也看過，面試官當然也會看過囉，有可能你都不必解釋太多，面試官看兩行就知道你想寫什麼了，尤其是對於我這種新手來說直接學習大神們寫的 code 會更容易上手。
 
 最後附上一個勸退大家使用模板的人，但他的寫法剛好就是我覺得最好用的模板寫法 XD，我覺得他的解釋寫得很好，還沒完全理解 binary search 的可以去看看，模板好用是好用，但還是得先理解過後才能得心應手。<br>
