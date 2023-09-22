@@ -104,7 +104,8 @@ outline: deep
 我最一開始在練習時很常寫出無窮迴圈，要不就是迴圈結束後出來的值不是我要的答案...<br>
 然後就開始嘗試把`+1` `-1` `<` `<=` 的各種組合都試一次，最後 AC 我也不知道是為什麼。<br>
 
-如果跟我有一樣困擾的人，這邊一律推薦使用模板 XDD
+如果跟我有一樣困擾的人，這邊一律推薦無腦使用模板 XDD<br>
+(開玩笑的，請認真理解過後再使用模板，不然一樣沒用)
 
 網路上的模板有很多種，我剛開始寫的時候是用三個模板的版本，看是要找到值的還是要找邊界的，不同使用情境分別使用不同模板，但後來我最喜歡下面這種模板，非常乾淨一招打天下。
 
@@ -126,7 +127,11 @@ def binary_search(array) -> int:
     return left
 ```
 
-每題都變成只要考慮第八行中`if`的條件，這個就是縮小邊界的條件，其他部分都不用動，再也不用想什麼`+1` `-1` `<`跟`<=`了，等於把所有需要思考條件的部分都集中到一個地方了。<br>
+這邊<font v-pre color="#c2534c">要注意這個模板的區間是 `[left, right)` </font> 所以要注意上界的範圍。<br>
+其實這就跟 python 的 [bisect](https://github.com/python/cpython/blob/3.11/Lib/bisect.py) 用的是一樣的，我猜作者應該也是有參考這個的 ，因為不是很像而已是根本一模一樣 XDD<br>
+而最後回傳`left`會是<font v-pre color="#c2534c">區間內第一個滿足`condition`的值</font>，如果沒有任何值滿足`condition`則會返回 right 的初始值。<br>
+
+遇到題目先將上下界定好之後，都只需要思考第八行`if`的條件，寫起來都變得非常快速乾淨。<br>
 原理我這邊都不解釋了直接用題目分享，如果沒有很熟的人一定要把上面的文章仔細讀過。<br>
 
 #### 題目實例
@@ -372,16 +377,81 @@ class Solution {
 :::
 
 使用模板的優點超明顯，主要程式的部分幾乎一模一樣，只要思考`canFinish`的部分，所有題目都可以轉換成這種形式。<br>
-可以多練習幾題去感受一下
+可以多練習幾題去感受一下，其他題目我就陸續更新在參考解答區了。
 
 ### 心得
 
 一開始使用模板可能會稍微有點不習慣，因為每個人的寫 code 習慣都不同，硬是要改成一個制式化的寫法，應該很多人都不喜歡，尤其不打週賽的人更會覺得沒必要，但我覺得一個好的模板不只是讓你打週賽時更快的解決問題而已，在面試時也可以<font v-pre color="#c2534c">更容易讓面試官看得懂</font>，所以平常在刷題時我不是追求要什麼 beat 99%，<font v-pre color="#c2534c">我更在乎的是我寫出來的 code 可讀性高不高，能不能清楚的表達我在寫什麼東西</font>，這時候一個好的模板就很方便了，畢竟你看過我看過獨眼龍也看過，面試官當然也會看過囉，有可能你都不必解釋太多，面試官看兩行就知道你想寫什麼了，尤其是對於我這種新手來說直接學習大神們寫的 code 會更容易上手。
 
-最後附上一個勸退大家使用模板的人，但他的寫法剛好就是我覺得最好用的模板寫法 XD，我覺得他的解釋寫得很好，還沒完全理解 binary search 的可以去看看，模板好用是好用，但還是得先理解過後才能得心應手。<br>
+最後附上一個勸退大家使用模板的人，但他的寫法剛好就是我覺得最好用的模板寫法 XD，我覺得他的解釋寫得很好，還沒完全理解 Binary Search 的可以去看看，模板好用是好用，但還是得先理解過後才能得心應手。<br>
 
 [Come on, forget the binary search pattern/template! Try understand it!](https://leetcode.com/problems/search-insert-position/solutions/249092/come-on-forget-the-binary-search-pattern-template-try-understand-it/)
+
+額外再推薦一個中文教學 [Binary Search 完整教學](https://medium.com/appworks-school/binary-search-%E9%82%A3%E4%BA%9B%E8%97%8F%E5%9C%A8%E7%B4%B0%E7%AF%80%E8%A3%A1%E7%9A%84%E9%AD%94%E9%AC%BC-%E4%B8%80-%E5%9F%BA%E7%A4%8E%E4%BB%8B%E7%B4%B9-dd2cd804aee1)，如果英文真的看不下去，那這篇也寫得非常詳細。
 
 ### 參考解答
 
 陸續更新中
+
+#### 2517. Maximum Tastiness of Candy Basket
+
+::: code-group
+
+```python
+class Solution:
+    def maximumTastiness(self, price: List[int], k: int) -> int:
+        def isPossible(mid: int) -> bool:
+            count = 1
+            pre = price[0]
+            for p in price[1:]:
+                if p - pre >= mid:
+                    count += 1
+                    pre = p
+            return count >= k
+
+        price.sort()
+        left = 0
+        right = price[-1] - price[0] + 1 # 因爲區間是 [left, right) 要注意將 right + 1
+
+        while left < right:
+            mid = (left + right) // 2
+            if not isPossible(mid):
+                right = mid
+            else:
+                left = mid + 1
+        return left - 1 # left 是第一個不滿足的，所以要 -1
+```
+
+```javascript
+function maximumTastiness(price, k) {
+  function isPossible(mid) {
+    let count = 1;
+    let current = price[0];
+    for (const p of price) {
+      if (p - current >= mid) {
+        count++;
+        current = p;
+      }
+    }
+
+    return count >= k;
+  }
+
+  price.sort((a, b) => a - b);
+  let left = 0;
+  let right = price[price.length - 1] - price[0] + 1;
+
+  while (left < right) {
+    const mid = (left + right) >> 1;
+    if (!isPossible(mid)) {
+      right = mid;
+    } else {
+      left = mid + 1;
+    }
+  }
+
+  return left - 1;
+}
+```
+
+:::
