@@ -395,6 +395,9 @@ class Solution {
 
 #### 2517. Maximum Tastiness of Candy Basket
 
+題目的重點在於找出一個由 k 種不同價格糖果組成的籃子，使得該籃子的「美味程度」最大。這裡的「美味程度」指的是籃子中任意兩顆糖果價格的最小絕對差值。
+
+思路：
 ::: code-group
 
 ```python
@@ -451,6 +454,75 @@ function maximumTastiness(price, k) {
   }
 
   return left - 1;
+}
+```
+
+```cpp
+class Solution {
+public:
+    int maximumTastiness(vector<int>& price, int k) {
+        sort(price.begin(), price.end());
+        int left = 0;
+        int right = price[price.size() - 1] - price[0] + 1;
+
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (!isPossible(price, k, mid)){
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+
+        return left - 1;
+    }
+
+    bool isPossible(vector<int>& price, int k, int mid){
+        int count = 1;
+        int pre = price[0];
+        for (int i = 1; i < price.size(); i++) {
+            if (price[i] - pre >= mid) {
+                count++;
+                pre = price[i];
+            }
+        }
+
+        return count >= k;
+    }
+};
+```
+
+```java
+class Solution {
+    public int maximumTastiness(int[] price, int k) {
+        Arrays.sort(price);
+        int left = 0;
+        int right = price[price.length - 1] - price[0] + 1;
+
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (!isPossible(price, k, mid)) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+
+        return left - 1;
+    }
+
+    public boolean isPossible(int[] price, int k, int mid) {
+        int count = 1;
+        int pre = price[0];
+        for (int i = 1; i < price.length; i++) {
+            if (price[i] - pre >= mid) {
+                count++;
+                pre = price[i];
+            }
+        }
+
+        return count >= k;
+    }
 }
 ```
 
