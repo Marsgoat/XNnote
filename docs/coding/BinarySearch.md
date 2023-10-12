@@ -393,11 +393,33 @@ class Solution {
 
 陸續更新中
 
-#### 2517. Maximum Tastiness of Candy Basket
+#### [2517. Maximum Tastiness of Candy Basket](https://leetcode.com/problems/maximum-tastiness-of-candy-basket/)
 
-題目的重點在於找出一個由 k 種不同價格糖果組成的籃子，使得該籃子的「美味程度」最大。這裡的「美味程度」指的是籃子中任意兩顆糖果價格的最小絕對差值。
+題目給一個正整數陣列 `price`，其中 `price[i]` 代表第`i`顆糖果的價格，以及一個正整數`k`。<br>
+商店賣的糖果籃子裡有 `k` 個不同的糖果。一個糖果籃子的"美味度"（tastiness）是籃子裡任兩種糖果價格的最小絕對差，最後要回傳最大的美味度。
 
-思路：
+思路：<br>
+暴力解的話就是任選 `k` 個糖果，分別計算最大的美味度，這樣時間複雜度是 $O\left( \binom{n}{k} \times k^2 \right)$。
+
+當 `k` = 2 ，要挑兩顆糖果使他們的美味程度最高的話，一定是挑價格最大跟最小。<br>
+
+當 `k` >= 3 時就比較難一眼看出答案，所以我們可以先將`price`做排序。<br>
+
+```
+Input: price = [13,5,1,8,21,2], k = 3
+Output: 8
+```
+
+```
+price = [1,2,5,8,13,21]
+```
+
+解題步驟：
+
+1. 定義邊界：<br>
+   有可能的最小差值為 0(所有糖果價格都一樣)，最大差值就是 $price_{max} - price_{min}$。<br>
+   如果是套用上面模板的人要注意一下，因爲區間是 `[left, right)` 實作時要將 `right` + 1 才會把所有可能涵蓋進去。
+
 ::: code-group
 
 ```python
@@ -414,7 +436,8 @@ class Solution:
 
         price.sort()
         left = 0
-        right = price[-1] - price[0] + 1 # 因爲區間是 [left, right) 要注意將 right + 1
+        # 因爲區間是 [left, right) 要注意將 right + 1
+        right = price[-1] - price[0] + 1
 
         while left < right:
             mid = (left + right) // 2
