@@ -4,6 +4,8 @@ outline: deep
 
 # Sliding Window
 
+`2023/10/20`
+
 :::warning <div></div>
 本篇會以已經知道 Sliding Window 來做介紹，這邊只會整理題目跟分享解題心得，如果還沒有學過的人請先去找資源學習。
 :::
