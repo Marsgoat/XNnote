@@ -17,8 +17,6 @@ outline: deep
 - ### 基礎題型
 
   - [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
-  - [904. Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)
-  - [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 
 - ### 題組延伸
 
@@ -39,6 +37,8 @@ outline: deep
 2. 延續上題，如果他有一天的特休可以使用，那他能得到的最長連假是多長？
 3. 延續上題，如果他有`k`天的特休可以使用，那他能得到的最長連假是多長？
 
+Sliding Window 包裝起來千變萬化，但其實解法都一模一樣，請一定要完全理解，盡量不要背答案，題目非常多也太不可能寫得完的，如果這種簡單的 coding 技巧題都要用背的，那等進到`DP`時應該會非常痛苦，不看答案永遠寫不出來。
+
 - ### 變化延伸
 
   - [2024. Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/)
@@ -49,3 +49,5 @@ outline: deep
   - [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
   - [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
   - [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/)
+  - [904. Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)
+  - [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
