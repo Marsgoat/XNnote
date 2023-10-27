@@ -30,7 +30,7 @@ outline: deep
     這題要訂閱 Leetcode Premium 才可以看，不過其實就是第一題延伸，有一次機會將其中一個 0 換成 1，一樣求最長連續`1`的數量。
   - [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)
 
-    <br>
+::: details 第一題解答
 
 ```javascript
 function findMaxConsecutiveOnes(nums) {
@@ -47,6 +47,10 @@ function findMaxConsecutiveOnes(nums) {
   return max;
 }
 ```
+
+:::
+
+::: details 第二題解答
 
 ```javascript
 function longestOnes(nums) {
@@ -69,6 +73,10 @@ function longestOnes(nums) {
 ```
 
 紀錄 0 左右的 1 數量，當然也可以直接用第三題的方式解，就是把 k 改成 1 而已
+
+:::
+
+::: details 第三題解答
 
 ```javascript
 function longestOnes(nums, k) {
@@ -96,6 +104,7 @@ function longestOnes(nums, k) {
 
 使用 sliding window 的概念
 按照順序遍歷 array，使用 zeroCount 紀錄 0 的數量，當 0 的數量大於 k 時，就往前扣掉第一個 0 以前的所有 1。
+:::
 
 - #### 同類型換包裝題
   - [1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)
