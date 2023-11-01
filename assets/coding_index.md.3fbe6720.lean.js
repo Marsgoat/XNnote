@@ -1,0 +1,1 @@
+import{_ as e,c as i,o as t,a}from"./app.3bcddf2c.js";const m=JSON.parse('{"title":"Coding","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"coding/index.md"}'),l={name:"coding/index.md"},o=a("",6),n=[o];function r(d,h,c,s,g,_){return t(),i("div",null,n)}const u=e(l,[["render",r]]);export{m as __pageData,u as default};
