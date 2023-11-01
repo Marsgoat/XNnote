@@ -92,7 +92,7 @@ function sidebarChat() {
 function sidebarCoding() {
   return [
     {
-      text: 'coding',
+      text: 'Coding',
       collapsible: true,
       items: [
         { text: '蜜月橋牌程式優化(位元運算)', link: '/coding/GodJimmy' },
@@ -111,14 +111,17 @@ function sidebarCoding() {
         },
         { text: 'Merge Intervals', link: '/coding/mergeIntervals' },
         { text: 'VitePress', link: '/coding/vitepress' },
-        { text: 'Binary Search', link: '/coding/BinarySearch' },
-        { text: 'Sliding Window', link: '/coding/SlidingWindow' },
       ],
     },
     {
       text: 'LeetCode',
       collapsible: true,
-      items: [{ text: '每日一題', link: '/coding/leetcodeEveryDay' }],
+      items: [
+        { text: '每日一題', link: '/coding/leetcodeEveryDay' },
+        { text: 'Binary Search', link: '/coding/BinarySearch' },
+        { text: 'Sliding Window', link: '/coding/SlidingWindow' },
+        { text: 'Stack and Queue', link: '/coding/Stack_Queue' },
+      ],
     },
   ];
 }

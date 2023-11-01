@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# coding
+# Coding
 
 關於一些程式學習的紀錄。
 
@@ -17,7 +17,12 @@ outline: deep
 - [9.2022 面試白板題](/coding/interview2022-leetcode.md)
 - [10.Merge Intervals](/coding/mergeIntervals.md)
 - [11.VitePress](/coding/vitepress.md)
-- [12.Binary Search](/coding/BinarySearch.md)
-- [13.Sliding Window](/coding/SlidingWindow.md)
 
-[Leetcode 每日一題](/coding/leetcodeEveryDay.md)
+# Leetcode
+
+專門針對刷題的紀錄。
+
+- [Leetcode 每日一題](/coding/leetcodeEveryDay.md)
+- [1.Binary Search](/coding/BinarySearch.md)
+- [2.Sliding Window](/coding/SlidingWindow.md)
+- [3.Stack and Queue](/coding/Stack_Queue)
