@@ -111,6 +111,7 @@ function sidebarCoding() {
         },
         { text: 'Merge Intervals', link: '/coding/mergeIntervals' },
         { text: 'VitePress', link: '/coding/vitepress' },
+        { text: 'Prompt Injection', link: '/coding/PromptInjection' },
       ],
     },
     {
